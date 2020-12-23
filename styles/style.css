@@ -1,4 +1,4 @@
-/* @import url("reset.css"); */
+@import url("reset.css");
 
 * {
   margin: 0;
@@ -12,8 +12,6 @@
   --background-color-main: #3cdbc0;
   --background-color-header: #ffffff;
   --text-main: #ffffff;
-  /* Font family */
-  --font-family: "Rubik", sans-serif;
 }
 
 .page {
@@ -42,13 +40,17 @@
   list-style: none;
 }
 
+.link-logo {
+  height: 71px;
+}
+
 .logo {
   margin-top: 10px;
 }
 
 .link {
   color: var(--text-menu);
-  font-family: var(--font-family);
+  font-family: "Rubik", sans-serif;
   font-size: 16px;
   margin: 0 10px;
 }
@@ -56,23 +58,21 @@
 /* Main styles */
 .main {
   height: 100vh;
-  background-color: var(--background-color-main);
-}
-
-.title {
+  font-family: "Rubik", sans-serif;
   color: var(--text-main);
   font-size: 30px;
+  background-color: var(--background-color-main);
   font-weight: bold;
-  height: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+}
+
+.title {
+  text-align: center;
 }
 .slogan {
-  font-family: var(--font-family);
-  font-size: 30px;
-  font-weight: bold;
+  display: block;
 }
 
 /* Desktop and tablet mediaquery */
@@ -83,7 +83,7 @@
     justify-content: space-between;
     margin: 20px 20px 20px 30px;
   }
-  .slogan {
+  .main {
     font-size: 40px;
   }
 }
