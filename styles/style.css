@@ -1,3 +1,5 @@
+/* @import url("reset.css"); */
+
 * {
   margin: 0;
   padding: 0;
@@ -5,11 +7,18 @@
 }
 
 :root {
+  /* Colors */
   --text-menu: #4a4a4a;
   --background-color-main: #3cdbc0;
   --background-color-header: #ffffff;
   --text-main: #ffffff;
+  /* Font family */
   --font-family: "Rubik", sans-serif;
+}
+
+.page {
+  width: 100%;
+  scroll-behavior: smooth;
 }
 
 /* Header styles */
@@ -52,7 +61,6 @@
 
 .title {
   color: var(--text-main);
-  font-family: var(--font-family);
   font-size: 30px;
   font-weight: bold;
   height: 100%;
@@ -61,6 +69,13 @@
   justify-content: center;
   align-items: center;
 }
+.slogan {
+  font-family: var(--font-family);
+  font-size: 30px;
+  font-weight: bold;
+}
+
+/* Desktop and tablet mediaquery */
 
 @media all and (min-width: 746px) {
   .navigation {
@@ -68,7 +83,7 @@
     justify-content: space-between;
     margin: 20px 20px 20px 30px;
   }
-  .title {
+  .slogan {
     font-size: 40px;
   }
 }
